@@ -1,0 +1,14 @@
+{
+    "name":        "snpy/instantclick",
+    "type":        "library",
+    "description": "InstantClick library",
+    "keywords":    [],
+    "homepage":    "https://github.com/snpy/instantclick",
+    "license":     "MIT",
+    "authors":     [
+        "Alexandre Dieulot"
+    ],
+    "support":     {
+        "issues": "https://github.com/snpy/instantclick/issues?state=open"
+    }
+}
