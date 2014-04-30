@@ -105,6 +105,8 @@ var InstantClick = function(document, location) {
   function changePage(title, body, newUrl, scrollY) {
     document.title = title
 
+    patchBodyForModSpeed(body);
+
     document.documentElement.replaceChild(body, document.body)
     /* We cannot just use `document.body = doc.body`, it causes Safari (tested
        5.1, 6.0 and Mobile 7.0) to execute script tags directly.
