@@ -91,6 +91,17 @@ var InstantClick = function(document, location) {
     /* The `change` event takes one boolean argument: "isInitialLoad" */
   }
 
+  function patchBodyForModSpeed(body) {
+    var child = body.childNodes[0];
+
+    if (1 === child.nodeType
+      && 'NOSCRIPT' === child.tagName.toUpperCase()
+      && child.innerHTML.match(/\?ModPagespeed=noscript/)
+    ) {
+      child.removeChild(child);
+    }
+  }
+
   function changePage(title, body, newUrl, scrollY) {
     document.title = title
 
