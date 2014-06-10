@@ -96,7 +96,7 @@ var InstantClick = function(document, location) {
 
     if (1 === child.nodeType
       && 'NOSCRIPT' === child.tagName.toUpperCase()
-      && child.innerHTML.match(/\?ModPagespeed=noscript/)
+      && child.innerHTML.match(/\bModPagespeed=noscript\b/)
     ) {
       body.removeChild(child);
     }
